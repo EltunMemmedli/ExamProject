@@ -973,8 +973,7 @@ if(int.TryParse(secim, out Secim) && Secim < 3 && Secim > 0)
                                             }
 
                                             Questions.StartTheExam(category);
-                                            FileService fileService = new FileService("results.txt");
-                                            List<Result> results = fileService.LoadResults(); // Nəticələri oxuyur
+
 
                                         AnaMenuKecini:
                                             Console.WriteLine("\nAna Menuya qayitmaq ucun 'f' duymesine basin");
